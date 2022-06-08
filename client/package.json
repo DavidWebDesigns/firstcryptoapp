@@ -1,13 +1,13 @@
 {
-  "name": "cryptapp",
+  "name": "mailmeta",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://davidwebdesigns.github.io/mailmeta",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-page -d dist",
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b ghpage -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
