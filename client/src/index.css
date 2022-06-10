@@ -15,26 +15,12 @@ h1{
 font-family: 'Major Mono Display', monospace;
 }
 
-/* .gradient-bg-welcome {
-  background-color:hsla(342,32%,85%,1);
-  background-image:
-    radial-gradient(at 0% 0%,  hsla(274,53%,90%,1) 0px, transparent 50%),
-    radial-gradient(at 50% 0%, hsla(204,53%,90%,1) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(244,100%,91%,1) 0, transparent 50%);
-} */
 .gradient-bg-welcome {
   background-color:hsla(342,32%,85%,1);
   background-image:
     radial-gradient(at 0% 50%, hsla(274,53%,90%,1) 0, transparent 50%),
     radial-gradient(at 50% 100%, rgb(230, 228, 255) 0, transparent 50%);
 }
-/* .gradient-bg-services {
-  background-color:hsla(342,32%,85%,1);
-  background-image:
-    radial-gradient(at 0% 50%, hsla(274,53%,90%,1) 0, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(244,100%,91%,1) 0, transparent 50%);
-} */
-
 .gradient-bg-transactions {
   background-color:hsla(342,32%,85%,1);
   background-image:
@@ -50,7 +36,6 @@ font-family: 'Major Mono Display', monospace;
 }
 
 .blue-glassmorphism {
-  /* background: rgba(155, 136, 183, 0.4); */
   background: rgba(162, 162, 162, 0.24);
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
@@ -58,14 +43,6 @@ font-family: 'Major Mono Display', monospace;
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid hsla(204,53%,90%,1);
 }
-/* .blue-glassmorphism {
-  background: rgba(127, 90, 178, 0.4);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgb(216, 187, 255);
-} */
 
 .white-glassmorphism {
   background: rgba(162, 162, 162, 0.1);
@@ -74,13 +51,6 @@ font-family: 'Major Mono Display', monospace;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* .white-glassmorphism {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-} */
 
 .eth-card {
   background: rgba(162, 162, 162, 0.1);
@@ -88,15 +58,6 @@ font-family: 'Major Mono Display', monospace;
   backdrop-filter: blur(50px);
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-    /* background-color:#ec99ff;
-    background-image:
-    radial-gradient(at 87% 8%, hsla(215,60%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 4% 35%, hsla(174,93%,61%,1) 0px, transparent 50%),
-    radial-gradient(at 72% 37%, hsla(321,83%,61%,1) 0px, transparent 50%),
-    radial-gradient(at 54% 100%, hsla(334,95%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 11% 23%, hsla(2,75%,68%,1) 0px, transparent 50%),
-    radial-gradient(at 18% 74%, hsla(242,75%,76%,1) 0px, transparent 50%),
-    radial-gradient(at 40% 31%, hsla(300,60%,62%,1) 0px, transparent 50%); */
 }
 
 .text-gradient {

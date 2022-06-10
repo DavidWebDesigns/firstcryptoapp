@@ -43,7 +43,6 @@ const Welcome = () => {
           <p className="sm:text-2xl text-center mt-5 text-[#6c3a1a] font-semibold md:w-9/12 w-11/12 text-base">
             Check and send messages attached to your Ethereum transacctions.
           </p>
-
           {!currentAccount && (
             <button
               type="button"
