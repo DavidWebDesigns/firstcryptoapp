@@ -15,7 +15,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     step="0.0001"
     value={value}
     onChange={(e) => handleChange(e, name)}
-    className="my-2 w-full rounded-xm p-2 outline-none rounded-full text-[#6c3a1a] border-[1px] border-white  text-sm  placeholder:text-white bg-transparent"
+    className="my-2 w-full rounded-xm p-2 outline-none rounded-full text-[#444444] border-[1px] border-white  text-sm  placeholder:text-white bg-transparent"
   />
 );
 
@@ -35,9 +35,9 @@ const Welcome = () => {
   return (
     <div className="flex w-full justify-center items-center">
       <MaskMeta />
-      <div className="mt-80 flex mf:flex-row flex-col justify-center items-center justify-between md:p-20 py-12 px-4">
+      <div className="mt-80 flex-wrap flex mf:flex-row flex-col justify-center items-center justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 items-center flex-col mf:mr-10">
-          <h1 className="text-4xl sm:text-8xl text-gradient py-1 tracking-wide font-bold">
+          <h1 className="text-4xl sm:text-7xl text-gradient py-1 tracking-wide font-bold">
           mAilmetA <br />
           </h1>
           <p className="sm:text-2xl text-center mt-5 text-[#6c3a1a] font-semibold md:w-9/12 w-11/12 text-base">
@@ -48,9 +48,9 @@ const Welcome = () => {
             <button
               type="button"
               onClick={connectWallet}
-              className="z-10 flex flex-row justify-center items-center my-5 p-3 rounded-full cursor-pointer text-white font-bold mt-2 border-[1px] p-2 border-[#D8BBFF] hover:bg-[#e4e1fa] hover:text-[#b6a3c8] rounded-full cursor-pointer"
+              className="z-10 flex flex-row justify-center items-center my-5 p-3 rounded-full drop-shadow text-[#444444] font-bold mt-2 border-[1px] p-2 border-white hover:bg-[#e7d5ec] hover:drop-shadow-lg"
             >
-              <p className="text-white text-base font-semibold">
+              <p className="text-base font-semibold">
                 Connect Wallet
               </p>
             </button>
@@ -61,7 +61,7 @@ const Welcome = () => {
             <div className="flex justify-between flex-col w-full h-full">
             <div className="flex justify-between items-start items-center ">
                 <div className="w-20 h-20 rounded-full border-2 border-white flex justify-center items-center">
-                  <SiEthereum clasName="z-0" fontSize={90} color="#444444" />
+                  <SiEthereum fontSize={90} color="#444444" />
                 </div>
                 <p className="text-white text-right font-semibold text-2xl sm:text-4xl mt-1 z-10">
                   Use Ropsten TestNet
@@ -79,14 +79,14 @@ const Welcome = () => {
               <Input placeholder="Amount of ETH" name="amount" type="number" handleChange={handleChange} />
               <Input placeholder="Subject (GIF Keyword)" name="keyword" type="text" handleChange={handleChange} />
               <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
-          <div className="h-[1px] w-full bg-[#D8BBFF] my-2" />
+          <div className="h-[1px] w-full bg-[#999999] my-2" />
             {isLoading
               ? <Loader />
               : (
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="text-white font-bold w-full mt-2 border-[1px] p-2 border-[#D8BBFF] hover:bg-[#e4e1fa] hover:text-[#b6a3c8] rounded-full cursor-pointer"
+                  className="drop-shadow font-bold w-full mt-2 border-[1px] p-2 border-white hover:bg-[#e7d5ec] text-[#444444] hover:drop-shadow-lg rounded-full"
                 >
                   Send now
                 </button>

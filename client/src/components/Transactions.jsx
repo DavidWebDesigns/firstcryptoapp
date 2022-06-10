@@ -32,16 +32,16 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
           <p className="text-white text-base"><b>Subject: </b>{keyword}</p>
           {message && (
             <>
-              <p className="text-white  text-base"><span className=" text-white font-bold">Message:</span><br/>{message}</p>
+              <p className="text-[#444444] font-bold text-base"><b className="text-white">Message:</b><br/>{message}</p>
             </>
           )}
         </div>
         <img
           src={gifUrl || url}
           alt="nature"
-          className="w-11/12 h-56 2xl:h-56 rounded-md shadow-lg object-cover"
+          className="w-11/12 h-56 2xl:h-56 rounded-md shadow-md object-cover border-[1px] border-white"
         />
-        <div className="white-glassmorphism p-2 px-2 w-6/12 rounded-3xl mt-2 shadow-2xl text-center">
+        <div className="white-glassmorphism p-2 pt-3 w-6/12 rounded-3xl mt-2 text-center">
           <p className="text-xs text-[#fff]">{timestamp}</p>
         </div>
       </div>
@@ -56,11 +56,11 @@ const Transactions = () => {
     <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
-          <h3 className="text-[#6c3a1a]  text-3xl text-center my-2">
+          <h3 className="text-[#444444] font-bold text-3xl text-center my-2">
             Latest Transactions
           </h3>
         ) : (
-          <h3 className="text-[#6c3a1a] text-3xl text-center my-2">
+          <h3 className="text-[#444444] font-bold text-3xl text-center my-2">
             Connect your account to see the latest transactions
           </h3>
         )}
